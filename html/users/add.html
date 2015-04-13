@@ -3,16 +3,16 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>无标题文档</title>
-    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="../../js/editor/kindeditor-all-min.js" type="text/javascript"></script>
-    <link href="../../js/editor/themes/default/default.css" rel="stylesheet" type="text/css" />
-    <script src="../../js/editor/lang/zh_CN.js" type="text/javascript"></script>
+    <script src="../js/editor/kindeditor-all-min.js" type="text/javascript"></script>
+    <link href="../js/editor/themes/default/default.css" rel="stylesheet" type="text/css" />
+    <script src="../js/editor/lang/zh_CN.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function () {
             var jsonstring = "[{\"id\": 0,\"name\": \"Item 0\"}, {\"id\": 1,\"name\":\"Item 1\"}, {\"id\": 2,\"name\": \"Item 2\"}]";
@@ -24,57 +24,42 @@
             jQuery("#sltcate").html(optionstring);
         });
     </script>
-    <script type="text/javascript">
-        KindEditor.ready(function (K) {
-            window.editor = K.create('#editor_id');
-        });
-    </script>
 </head>
 <body>
     <div class="place">
         <span>位置：</span>
         <ul class="placeul">
             <li><a href="/index.html">首页</a></li>
-            <li><a href="#">表单</a></li>
+            <li><a href="#">新增用户</a></li>
         </ul>
     </div>
     <div class="formbody">
         <div class="formtitle">
-            <span>文章基本信息</span></div>
+            <span>新增用户</span></div>
         <ul class="forminfo">
             <li>
                 <label for="exampleInputEmail1">
-                    文章标题</label>
+                    用户名</label>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="在此输入文章的标题"
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="在此输入用户的名称"
                         style="width: 350px;">
                 </div>
             </li>
             <li>
                 <label>
-                    作者</label><cite>
-                        <input type="text" class="form-control" id="author" placeholder="在此输入文章的作者" style="width: 350px;">
+                    邮箱</label><cite>
+                        <input type="text" class="form-control" id="author" placeholder="在此输入用户的邮箱，邮箱将作为找回密码的依据" style="width: 350px;">
                     </cite></li>
             <li>
                 <label>
-                    来源</label><cite>
-                        <input type="text" class="form-control" id="from" placeholder="在此输入文章的来源" style="width: 350px;">
-                    </cite></li>
-            <li>
-                <label>
-                    文章分类</label><cite>
+                    所属权限</label><cite>
                         <select class="form-control" id="sltcate" style="width: 350px;">
                         </select>
                     </cite></li>
             <li>
                 <label>
-                    文章内容</label>
-                <textarea id="editor_id" name="content" style="width: 700px; height: 300px;"></textarea>
-            </li>
-            <li>
-                <label>
                     &nbsp;</label>
-                <button type="button" class="btn btn-info" onclick="editor.sync();alert($('#editor_id').val());">
+                <button type="button" class="btn btn-info">
                     确认保存</button>
             </li>
         </ul>

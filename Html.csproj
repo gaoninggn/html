@@ -335,8 +335,10 @@
     <Content Include="css\select.css" />
     <Content Include="css\style.css" />
     <Content Include="error.html" />
-    <Content Include="form.html" />
     <Content Include="html\articles\add.html" />
+    <Content Include="html\articles\index.html" />
+    <Content Include="html\categories\add.html" />
+    <Content Include="html\categories\index.html" />
     <Content Include="html\css\bootstrap-table.min.css" />
     <Content Include="html\css\bootstrap.min.css" />
     <Content Include="html\css\style.css" />
@@ -669,6 +671,9 @@
     <Content Include="html\js\editor\themes\simple\simple.css" />
     <Content Include="html\js\jquery.js" />
     <Content Include="html\js\jquery.min.js" />
+    <Content Include="html\users\add.html" />
+    <Content Include="html\users\changepwd.html" />
+    <Content Include="html\users\index.html" />
     <Content Include="js\bootstrap-table-export.js" />
     <Content Include="js\bootstrap-table.js" />
     <Content Include="js\bootstrap.min.js" />
@@ -906,7 +911,6 @@
     <Content Include="Scripts\locale\easyui-lang-tr.js" />
     <Content Include="Scripts\locale\easyui-lang-zh_CN.js" />
     <Content Include="Scripts\locale\easyui-lang-zh_TW.js" />
-    <Content Include="tab.html" />
     <Content Include="html\top.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -925,10 +929,7 @@
     <None Include="html\data2.json" />
     <None Include="Scripts\jquery-1.11.1.min.map" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="html\categories\" />
-    <Folder Include="html\users\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>

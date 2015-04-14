@@ -671,6 +671,8 @@
     <Content Include="html\js\editor\themes\simple\simple.css" />
     <Content Include="html\js\jquery.js" />
     <Content Include="html\js\jquery.min.js" />
+    <Content Include="html\Menu\add.html" />
+    <Content Include="html\Menu\index.html" />
     <Content Include="html\users\add.html" />
     <Content Include="html\users\changepwd.html" />
     <Content Include="html\users\index.html" />
@@ -912,6 +914,9 @@
     <Content Include="Scripts\locale\easyui-lang-zh_CN.js" />
     <Content Include="Scripts\locale\easyui-lang-zh_TW.js" />
     <Content Include="html\top.html" />
+    <Content Include="settings\Menu\Menu.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

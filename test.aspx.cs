@@ -41,8 +41,15 @@ namespace Html
                 name = "企业简介2",
                 type = Model.buttonType.click
             };
+            var button3 = new Model.button
+            {
+                key = "key_3",
+                name = "企业简介3",
+                type = Model.buttonType.click
+            };
             menu.buttons.Add(button);
             menu.buttons.Add(button2);
+            menu.buttons.Add(button3);
 
             var jsonSetting = new Newtonsoft.Json.JsonSerializerSettings
             {

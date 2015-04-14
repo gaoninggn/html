@@ -1,0 +1,26 @@
+﻿{
+    "buttons": [
+        {
+            "name": "企业简介",
+            "key": "key_1",
+            "type": 1,
+            "subButtons": [
+                {
+                    "name": "sub1",
+                    "key": "key_sub_1",
+                    "type": 1
+                },
+                {
+                    "name": "sub2",
+                    "key": "key_sub_2",
+                    "type": 1
+                }
+            ]
+        },
+        {
+            "name": "企业简介2",
+            "key": "key_2",
+            "type": 1
+        }
+    ]
+}
